@@ -5,13 +5,11 @@ app = Flask(__name__)
 app.debug = True
 
 @app.route('/')
-def hello():
-    print("asdf")
+def initialbot():
     bot = Bot()
     # bot.login()
     # bot.upload_photo(caption="hello",photo="work.jpg")
     bot.unfollow(user_id="leomessi")
-    print("completed")
     return 'Hello, World!'
 
 
